@@ -1,0 +1,19 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "extends": [
+    "config:base", ":disableDependencyDashboard"
+  ],
+  "rebaseWhen": "behind-base-branch",
+  "packageRules": [
+    {
+      "description": "Updates to GitHub Actions should be tagged as 'ci'",
+      "matchPaths": [".github/workflows/*.yml", ".github/workflows/*.yaml"],
+      "semanticCommitType": "ci"
+    }
+  ],
+  "semanticCommits": "enabled",
+  "separateMajorMinor": true,
+  "separateMultipleMajor": true,
+  "reviewers": ["mirko.felice@studio.unibo.it"],
+  "assignees": ["mirko.felice@studio.unibo.it"]
+}
