@@ -15,5 +15,6 @@
   "separateMajorMinor": true,
   "separateMultipleMajor": true,
   "reviewers": ["mirko.felice@studio.unibo.it"],
-  "assignees": ["mirko.felice@studio.unibo.it"]
+  "assignees": ["mirko.felice@studio.unibo.it"],
+  "labels": ["update-deps"]
 }
