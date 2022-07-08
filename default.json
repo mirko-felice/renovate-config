@@ -9,12 +9,17 @@
       "description": "Updates to GitHub Actions should be tagged as 'ci'",
       "matchPaths": [".github/workflows/*.yml", ".github/workflows/*.yaml"],
       "semanticCommitType": "ci"
+    },
+    {
+      "description": "Updates to node_modules should always be tagged as 'chore' to not release a minor version because of default 'fix' commit type",
+      "matchPaths": ["package.json", "package-lock.json"],
+      "semanticCommitType": "chore"
     }
   ],
   "semanticCommits": "enabled",
   "separateMajorMinor": true,
   "separateMultipleMajor": true,
-  "reviewers": ["mirko.felice@studio.unibo.it"],
-  "assignees": ["mirko.felice@studio.unibo.it"],
+  "reviewers": ["mirko-felice"],
+  "assignees": ["mirko-felice"],
   "labels": ["update-deps"]
 }
